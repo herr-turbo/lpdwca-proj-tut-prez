@@ -7,6 +7,7 @@
     --grey-dark: #212121;
 
     --pink: #FF91AE;
+    --pink-hard: #e91e63;
     --green: #8BC34A;
     --purple: #673ab7;
   }
@@ -197,9 +198,16 @@
 .mr60px{
     margin-right: 60px;
 }
+.mr100px{
+    margin-right: 100px;
+}
 .mt100px{
     margin-top: 100px;
 }
+.mt40px{
+    margin-top: 40px;
+}
+
 
 .icon-margin{
     margin: 6px 15px;

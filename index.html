@@ -1,37 +1,38 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Projet tuteuré - David Klein</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/sky.css">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css"
+	<title>Projet tuteuré - David Klein</title>
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/sky.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css"
 		integrity="sha384-wxqG4glGB3nlqX0bi23nmgwCSjWIW13BdLUEYC4VIMehfbcro/ATkyDsF/AbIOVe" crossorigin="anonymous">
-		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"> 
-		<link rel="stylesheet" href="./lib/css/custom-style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./lib/css/custom-style.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
 
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				
-				<section>
+<body>
+	<div class="reveal">
+		<div class="slides">
+
+			<!-- <section>
 					<h1>Présentation <span class="txt-64px">du</span><br><span class="txt-bold">projet tuteuré</span></h1>
 
 					<h3>David Klein</h3>
@@ -50,28 +51,386 @@ dans le cadre du projet tuteuré
 					<div class="fragment"><img src="./lib/img/stjo.jpg" alt=""></div>
 
 					<aside class="notes">
-							Une application d’autoévaluation pour le collège de Matzenheim,
-							un village situé à quelques dizaines de kilomètres de Strasbourg.							
+							Une application d’autoévaluation pour l'institut saint Joseph.<br>
+							Un collège privé situé à Matzenheim<br>
+							à quelques kilomètres de Strasbourg.<br>						
 					</aside>
 				</section>
-			</div>
+
+				<section data-background-color="#e91e63" data-transition="zoom">
+					<h1 class="clr-white">Expression<br><span class="txt-64px">du</span> besoin</h1>
+				</section>
+
+				<section>
+					<h2 class="txt-bold">Autoévaluation régulières</h2>
+					<blockquote class="fragment">
+						<p class= "txt-32px">
+							&ldquo;Je sais formuler mes impression de lecture.&rdquo;
+						</p>
+						<p class= "fragment txt-32px">
+								&ldquo;Je sais organiser mon texte en différents paragraphes.&rdquo;
+							</p>
+				</blockquote>
+				<p class="fragment txt-bold">
+						<span class="mr-60px"><i class="far fa-square"></i>&nbsp;Maîtrise insuffisante&nbsp;&nbsp;&nbsp;</span>
+						<span class="mr-60px"><i class="far fa-square"></i>&nbsp;acceptable&nbsp;&nbsp;&nbsp;</span>
+						<br>
+						<span class="mr-60px"><i class="far fa-square"></i>&nbsp;Bonne&nbsp;&nbsp;&nbsp;</span>
+						<span class="mr-60px"><i class="fas fa-check-square"></i>&nbsp;Excellente&nbsp;&nbsp;&nbsp;</span>
+				</p>
+
+				<aside class="notes">
+						Le collège de Matzenheim demande régulièrement à ses élèves de s’autoévaluer via des fiches papier<br>
+						Voici un exemple type de question pour un cours de Français<br>
+						Les types de questionnaires varient selon les professeurs mais c’est généralement sous forme de QCM qu’ils sont distribués, avec ces 4 réponses						
+				</aside>
+				</section>
+
+			<section>
+					<h2 class="txt-bold">Rentrée 2019</h2>
+					<div class="fragment flex-row icon-300 mt100px">
+						<i class="fas fa-tablet-alt mr100px"></i>
+						<span class="fragment"><i class="fab fa-odnoklassniki"></i><i class="fab fa-odnoklassniki"></i></span>
+					</div>
+
+					<aside class="notes">
+							A la rentrée 2019 le collège fournira des iPad à leurs élèves<br>
+							Pour commencer 1 iPad pour 2 élèves.=
+					</aside>
+				</section> 
+
+			<section>
+				<div class="flex-row icon-300">
+					<i class="fas fa-file mr100px"></i>
+					<span class="fragment"><i class="fas fa-arrow-right icon-180 mr100px"></i><i class="fas fa-laptop"></i></span>
+				</div>
+
+				<aside class="notes">
+
+					l’idée est de transposer ces questionnaires papier en version numérique.<br>
+				
+					Les professeurs auront ainsi un espace personnel sur leur ordinateur où ils pourront créer des
+					questionnaires et les distribuer aux élèves qui eux y répondront sur leur iPad ou sur les Postes
+					informatiques du collège.
+
+				</aside>
+			</section>
+
+
+			<section data-background-color="#e91e63" data-transition="zoom">
+				<h1 class="clr-white">Contraintes</h1>
+			</section>
+
+			<section>
+
+				<h2 class="txt-bold">Contraintes</h2>
+				<ul>
+					<li class="fragment mt40px">Application web<span class="fragment"> : Multiplatefrome&nbsp;&nbsp;<i
+								class="fab fa-firefox"></i>&nbsp;&nbsp;<i class="fab fa-chrome"></i></span></li>
+					<li class="fragment mt40px">Responsive design&nbsp;&nbsp;<i
+							class="fas fa-desktop"></i>&nbsp;&nbsp;<i class="fas fa-laptop"></i>&nbsp;&nbsp;<i
+							class="fas fa-mobile-alt"></i>&nbsp;&nbsp;<i class="fas fa-tablet-alt"></i></li>
+					<li class="fragment txt-bold mt40px">Anonymat des élèves&nbsp;&nbsp;<i
+							class="fas fa-user-secret"></i></li>
+				</ul>
+
+				<aside class="notes">
+					Vu que les interfaces enseignant et élèves seront consultés sur différents supports, comme je le
+					disais, ordinateur et iPad, le choix d’une <strong>application web</strong> est la plus logique car
+					elle permet un seul développement compatible avec <strong>plusieurs plate formes</strong><br>
+					Et bien entendu il faut que l’application soit <strong>responsive</strong> et s’adapte à l’écran sur
+					lequel elle est affichée.
+
+					Autre spécificité : Les élèves doivent avoir un compte personnel
+					mais là où ça se complique c’est qu’il doit-être <strong>anonyme</strong><br>
+					Cette contrainte nous a posé beaucoup de questions : Dans la présentation du projet qu’on nous a
+					fournit il semblait que ces autoévaluation étaient là pour aider les élèves en difficultés,
+					mais comment identifier facilement un élève en difficulté si le questionnaire est anonyme ?
+					Vaste question, Je reviendrais plus tard sur ce point.
+				</aside>
+			</section>
+
+			<section>
+				<h2>Pré-requis techniques</h2>
+				<div class="flex-row icon-180">
+					<i class="fragment fab fa-html5 mr60px"></i>
+					<i class="fragment fab fa-css3-alt mr60px"></i>
+					<i class="fragment fab fa-js-square mr60px"></i>
+					<i class="fragment fab fa-php"></i>
+				</div>
+				<div>
+					<i class="fragment fas fa-code icon-200 mt-50px"></i>
+				</div>
+
+				<aside class="notes">
+						Pour le reste le projet devait être fait en <strong>HTML</strong>, <strong>CSS</strong>, un peu de <strong>Javascript</strong> et surtout <strong>PHP</strong>.<br>
+						Configuration classique pour un site dynamique.<br>
+						On a envisagé pendant un temps d’utiliser Symfony, un framework PHP qu’on aura étudié plus tard en cours <br>
+						mais nous sommes restés sur du PHP simple afin d’avoir le temps d’acquérir des <strong>bases solides</strong> … et grand bien nous en a pris. <br>
+						C'est important les bases !			
+				</aside>
+			</section>
+
+			<section data-background-color="#e91e63" data-transition="zoom">
+				<h1 class="clr-white">Choix <span class="txt-64px">du</span><br>Projet</h1>
+			</section>
+
+			<section>
+				<h2 class="txt-bold">Les raisons</h2>
+				<ul>
+					<li class="fragment mt40px">Le plus technique</li>
+					<li class="fragment mt40px">10-15 jours en application classique</li>
+					<li class="fragment mt40px">Défi technique motivant</li>
+					<li class="fragment mt40px">Manque de pratique &nbsp;&nbsp;<i class="fas fa-sad-tear"></i></li>
+				</ul>
+
+				<aside class="notes">
+						C’est moi qui ai choisi ce projet car c’était le plus <strong>technique</strong>.<br>
+					
+						j’ai déjà de l’expérience dans le développement d’application de gestion et j’estimais à <strong>10-15 jours</strong> de travail si je devais en faire une application de bureau classique.<br>
+						Autant faire un site vitrine ne m’intéressait pas, à plus forte raison à partir d’un CMS<br>
+						
+						Autant commencer un projet de zéro et transposer mes connaissances sur une appli web était un <strong>
+							défi bien plus motivant
+						</strong> et formateur à mes yeux.<br>
+						Il ne faut pas oublier que j’étais en formation continue, que j’ai eu un trou de 3-4 mois où je n’ai pas écrit <strong>la moindre ligne de code</strong> donc il fallait absolument que je me fasse la main sur un projet concret … Surtout avec le stage de fin d’année qui approchait, je me sentais très léger techniquement.						
+				</aside>
+			</section>
+
+			<section>
+				<h2 class="txt-bold">L'équipe</h2>
+				<div class="flex-row mt40px">
+					<div class="fragment mr60px">
+						<div><i class="fas fa-user-edit icon-200"></i></div>
+						<p class="txt-bold">Laure</p>
+						<p class="fragment txt-32px">Front-End</p>
+					</div>
+
+					<div class="fragment mr60px">
+						<div><i class="fas fa-user-clock icon-200"></i></i></div>
+						<p class="txt-bold">Geoffrey</p>
+						<p class="fragment txt-32px">Front-End<br>Trello</p>
+					</div>
+
+					<div class="fragment mr60px">
+						<div><i class="fas fa-user-ninja icon-200"></i></div>
+						<p class="txt-bold">Alec</p>
+						<p class="fragment txt-32px">Front-End<br>Back-End<br>Git Master</p>
+					</div>
+
+					<div class="fragment mr60px">
+						<div><i class="fas fa-user-cog icon-200"></i></i></div>
+						<p class="txt-bold">David</p>
+						<p class="fragment txt-32px">Analyse<br>BDD<br>Back-end</p>
+					</div>
+				</div>
+
+				<aside class="notes">
+						Par bonheur J’ai réussi à rassembler une équipe équilibrée et adaptée pour ce projet.<br>
+						
+					Laure, qui vient des beaux arts et qui s’est occupé du design et de l’intégration <br>
+					Geoffrey spécialiste front qui s’est aussi occupé du design et de l’intégration et qui a mis en place un Trello pour gérer les différentes tâches des projets.
+					Alec : Savant fou touche à tout avec un niveau technique exceptionnel malgré son jeune âge. Il s’est occupé de la partie Front, m’a aidé sur le Back-end et a géré le versionnage via Git et Github.
+					David : Chef de projet, analyse avec le création de la base de données et une grosse partie du code PHP		
+				</aside>
+
+			</section>
+
+
+			<section data-background-color="#e91e63" data-transition="zoom">
+				<h1 class="clr-white">Expression <span class="txt-64px">du</span><br>Besoin</h1>
+			</section>
+
+
+			<section data-background-color="#fff"
+				data-background-image="http://pggpayroll.com/wp-content/uploads/2017/05/Meeting.jpg"
+				data-background-size="contain">
+				<h1 class="bg-white fragment">
+					<span class="fragment">?</span>
+					<span class="fragment">?</span>
+					<span class="fragment">?</span>
+				</h1>
+
+				<aside class="notes">
+					Après le brief de départ et la première réunions synchrone nous n’avions pas toutes les réponses à
+					nos questions, particulièrement ce paradoxe entre l’anonymat des élèves et leur suivi.
+					Plutôt que de passer par 3 intermédiaires et d’attendre la réunion synchrone suivante pour avoir une
+					hypothétique réponse, j’ai décidé d’organiser directement une réunion avec le personnel éducatif du
+					collège de Matzenheim.
+				</aside>
+
+			</section>
+
+			<section data-background-color="#fff"
+				data-background-image="http://www.balsallparishcouncil.gov.uk/wp-content/uploads/2018/03/Meetings4.jpg"
+				data-background-size="contain">
+				<h1 class="bg-white fragment clr-green">
+					<i class="fragment far fa-laugh"></i>
+					<i class="fragment far fa-smile"></i>
+					<i class="fragment far fa-meh"></i>
+					<i class="fragment far fa-frown"></i>
+				</h1>
+
+				<aside class="notes">
+					C’était un très bon exercice et toute l’équipe a pu se présenter.
+					On a vite remarqué que la plupart des enseignants ne savaient pas ce qu’ils voulaient<br>
+					Et d'ailleurs ils ne comprenaient pas pourquoi les élèves devaient rester anonymes<br>
+					heureusement on avait déjà des propositions à leur faire et avons pu les orienter.<br>
+					On leur a par exemple proposé pour que pour la V1 les questionnaires ne seront des QCM avec les 4
+					mêmes réponses possibles, des smileys allant du plus joyeux au plus triste.
+					Et que cela pourra évoluer avec une V2. Si nous étions partis sur l’option chaque prof fait ce qu’il
+					veut, ça aurait facilement pu double le temps de développement et surtout le fait d’avoir à chaque
+					fois le même type de réponse permet d’extraire des statistiques
+				</aside>
+
+			</section>
+
+
+
+			<section>
+				<h2>Que faire des informations ?</h2>
+
+				<div class="icon-300">
+					<i class="fragment fas fa-chart-line"></i>
+				</div>
+
+				<aside class="notes">
+					Car oui on recueille des informations, d’accord, mais qu’est ce qu’on en fait après ?<br>
+					Généralement des statistiques
+				</aside>
+
+			</section>
+
+
+			<Section>
+				<h2 class="txt-bold">
+					Confirmation
+				</h2>
+
+
+				<ul>
+					<li class="fragment">Anonymat <strong>Obligatoire</strong>&nbsp;&nbsp;<i class="fas fa-user-secret"></i></li>
+					<li class="fragment">But : Statistiques</li>
+					<li class="flex-row icon-180 mt40px fragment">
+							<i class="mr60px fas fa-chart-pie"></i>
+							<i class="mr60px fas fa-chart-line"></i>
+							<i class="mr60px fas fa-chart-area"></i>
+							<i class="mr60px fas fa-chart-bar"></i>
+					</li>
+				</ul>
+				<p></p>
+				<p></p>
+			
+				<aside class="notes">
+						Et justement, Madame la Proviseure nous a aussi rejoint en cours de réunion et validé notre démarche.
+
+						Déjà elle a tranché pour cette histoire d’anonymat, oui il est <strong>obligatoire</strong><br>
+						vu que les données seront hébergées sur des serveurs autres que ceux de
+						l’académie de Strasbourg Légalement il est impossible d’y stocker des noms d'élèves.<br>
+
+						non ces auto-évaluations ne sont pas là pour suivre un élève en difficulté mais pour faire des <strong>statistiques</strong> sur la compréhension de chaque cours à chaque trimestre.
+				</aside>
+
+			</Section>
+
+
+			<section data-background-color="#e91e63" data-transition="zoom">
+				<h1 class="clr-white">Analyse</h1>
+				<aside class="notes">
+					A partir de là nous avons brainstormé à plusieurs pour l’ergonomie générale<br>
+					Nous avons produit plusieurs documents
+				</aside>
+			</section>
+
+			<section data-background-video="./lib/video/mindmap-4x.mp4" data-background-video-loop="true">
+				<aside class="notes">
+					un mindmap pour la navigation sur le site<br>
+				</aside>
+			</section>
+
+			<section data-background-video="./lib/video/wireframe-3x.mp4" data-background-video-loop="true">
+				<aside class="notes">
+					Un wireframe pour expliquer les différentes étapes à réaliser pour la distribution des autoévaluations<br>
+				</aside>
+			</section>
+
+			<section data-background-video="./lib/video/maquette-2x.mp4" data-background-video-loop="true">
+				<aside class="notes">
+					Laure a fait une maquette interactive sous Adobe XD <br>
+				</aside>
+			</section>
+
+			<section data-background-video="./lib/video/navig.mp4" data-background-video-loop="true">
+				<aside class="notes">
+					et encore d'autres qui n'ont pas forcément été retenus mais qui ont participé au processus d'analyse
+				</aside>
+			</section>
+
+			<section>
+				<h2 class="txt-bold">Fonctionnalités</h2>
+				<ul>
+					<li class="fragment">Pas de cahier des charges</li>
+					<li class="fragment">Cahier des charges Fonctionnel</li>
+				</ul>
+				<aside class="notes">
+					Pour ce qui est des fonctionnalités j’ai fait le gros de l’analyse<br>
+					j’avais l’habitude de part mon précédent poste et étant le seul du groupe en formation
+					continue ça me laissait plus de temps pour peaufiner les détails.<br>
+					Notre tuteur de projet a été Magnanime et ne nous a pas imposé de <strong>cahier des charges classique</strong>
+					Mais un cahier des charges <strong>fonctionnel</strong>
+				</aside>
+			</section>
+
+			<section data-background-video="./lib/video/fonctions.mp4" data-background-video-loop="true">
+				<aside class="notes">
+					C'est à dire que nous avons listé toutes les fonctionnalités<br>
+					et les avons validées avec notre tuteur durant les réunions synchrone<br>
+					En prenant bien en compte quel type d'utilisateur pouvait effecteur telle ou telle action.
+				</aside>
+			</section> -->
+
+
+		<section data-background-color="#e91e63" data-transition="zoom">
+			<h1 class="clr-white">Production</h1>
+		</section>
+
+		<section data-background-video="./lib/video/bdd.mp4" data-background-video-loop="true">
+			<aside class="notes">
+				La première étape dont je me suis occupé fut la création de la base de donnée.
+				Cette dernière était assez complexe car elle devait prendre en compte plusieurs subtilités
+			</aside>
+		</section>
+
+		<section>
+			<h2><i class="fas fa-database"></i>&nbsp;&nbsp;Base de données&nbsp;&nbsp;<i class="fas fa-database"></i></h2>
+			<ul>
+				<li class="fragment"></li>
+				<li class="fragment"></li>
+				<li class="fragment"></li>
+				<li class="fragment"></li>
+			</ul>
+		</section>
+
+
 		</div>
+	</div>
 
-		<script src="js/reveal.js"></script>
+	<script src="js/reveal.js"></script>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true }
-				],
-				controls: false
-			});
-		</script>
-	</body>
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true }
+			],
+			controls: false
+		});
+	</script>
+</body>
+
 </html>
